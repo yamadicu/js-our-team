@@ -29,10 +29,18 @@ const team = [
       ruolo: 'Graphic Designer',
       image: 'barbara-ramos-graphic-designer.jpg',
     },
-  ];
+];
 
-  for ( let i = 0; i < team.length; i++ ){
+for ( let i = 0; i < team.length; i++ ){
 
     console.log(team[i]);
+    //abbino il singolo oggetto della classe alla variabile
+    let oggetto = team[i]
 
-  }
+    for ( let key in oggetto ){
+        console.log(key);
+        console.log( oggetto[key] );
+    }
+    
+
+}
